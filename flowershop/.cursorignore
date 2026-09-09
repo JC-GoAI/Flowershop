@@ -1,0 +1,31 @@
+# ==========================================
+# Cursor AI 隱私與安全防線 (.cursorignore)
+# ==========================================
+
+# 1. 機密與環境變數檔案（防止 AI 讀取 API Keys / 密碼）
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+secrets/
+credentials/
+
+# 2. 數據庫與個人資料
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.jsonl
+
+# 3. 系統與日誌檔
+.DS_Store
+*.log
+logs/
+
+# 4. 大型套件與編譯產物（避免 AI 浪費 Token 或讀取無關代碼）
+node_modules/
+dist/
+build/
+.next/

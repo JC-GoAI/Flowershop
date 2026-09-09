@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf7f2;
+  --foreground: #3c342e;
+  --muted: #8a7a6c;
+  --sage: #8a9a84;
+  --paper: #f3eee6;
+  --cream: #fffdf9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-sage: var(--sage);
+  --color-paper: var(--paper);
+  --color-cream: var(--cream);
+  --font-sans: var(--font-noto);
+  --font-display: var(--font-cormorant);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), "Noto Sans TC", sans-serif;
+}
+
+::selection {
+  background: #e8dcd0;
+}
