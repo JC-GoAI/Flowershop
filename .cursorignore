@@ -1,0 +1,22 @@
+# 1. 隔離環境變數與機密金鑰
+.env
+.env.*
+*.pem
+*.key
+*.cert
+
+# 2. 隔離金鑰與設定檔資料夾
+secrets/
+config/secrets.*
+
+# 3. 隔離個人隱私文件與圖片
+*.pdf
+*.docx
+*.jpg
+*.png
+private/
+
+# 4. 隔離數據庫與日誌檔案
+*.db
+*.sqlite
+*.log

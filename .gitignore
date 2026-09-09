@@ -1,0 +1,13 @@
+# 1. 隔離環境變數與機密檔案（極重要，避免上傳到雲端）
+.env
+.env.*
+*.pem
+*.key
+*.cert
+secrets/
+
+# 2. 隔離系統自動生成的暫存檔
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
